@@ -1,43 +1,42 @@
-# TripleTen_DataAnalytics_Business_Project_Analytics
+# Project: TripleTen Data Analytics Business Project
 
-Descripcion del proyecto:
+## Business Context
+This project simulates a professional engagement within the Analytics Department of Showz, an event ticketing platform. The core challenge was to evaluate historical data to optimize marketing budgets and improve customer acquisition strategies.
 
-Optimización de Gastos de Marketing - Showz
-Este proyecto se desarrolló como una práctica profesional en un entorno ficticio del departamento de analítica de Showz, una empresa dedicada a la venta de entradas para eventos. El objetivo central es optimizar las inversiones de marketing mediante un análisis profundo de datos históricos.
+## 🎯 Research Objectives
+The analysis addresses critical business questions through a data-driven lens:
 
-🎯 Objetivos de la Investigación
-El análisis busca responder a las siguientes preguntas de negocio:
+User Behavior: How do users interact with the platform across different devices?
 
+Conversion Funnels: Identifying the exact touchpoints and time-to-conversion for first-time buyers.
 
-Uso del servicio: ¿Cómo interactúan los clientes con la plataforma? 
-Conversión: ¿En qué momento exacto los usuarios realizan su primera compra? 
-Valor del cliente: ¿Cuánto dinero aporta cada cliente a la compañía (LTV)? 
-Rentabilidad: ¿Cuándo cubren los ingresos el costo de adquisición de los clientes? 
+Customer Lifetime Value (LTV): Quantifying the long-term financial contribution of each customer.
 
-📊 Datos Analizados
-Se trabajó con tres fuentes de datos principales que cubren el periodo de enero de 2017 a diciembre de 2018:
+Profitability & Payback Period: Determining the exact point when revenue offsets Customer Acquisition Costs (CAC).
 
+## 📊 Datasets Overview
+Analysis of multi-source data spanning from January 2017 to December 2018:
 
-Visitas: Registros del servidor con datos de sesiones (Uid, dispositivo, tiempos de inicio/fin e identificador de fuente publicitaria).
-Pedidos: Registro de transacciones e ingresos generados por cada compra.
-Gastos: Estadísticas de inversión en marketing por fuente y fecha.
+Web Server Logs (Visits): Session-level data including Uid, device type, timestamps, and ad source IDs.
 
-🛠️ Pasos Realizados
-El proyecto sigue una estructura analítica rigurosa:
+Transactional Data (Orders): Comprehensive record of purchases and revenue per user.
 
+Marketing Spend (Expenses): Granular investment data categorized by acquisition source and date.
 
-Preparación de Datos: Carga y optimización de tipos de datos para asegurar la calidad del análisis.
+## 🛠️ Analytical Roadmap
+Data Engineering & Preparation: Robust ETL process focusing on data type optimization and quality assurance.
 
-Cálculo de Métricas y Reportes:
+Product Metrics: Calculated DAU, WAU, and MAU, session frequency, and ASL (Average Session Length) to determine retention rates.
 
-Visitas: Cálculo de usuarios activos diarios, semanales y mensuales (DAU, WAU, MAU), sesiones por día, duración de sesiones y tasa de retorno.
-Ventas: Análisis de cohortes para medir el tiempo de conversión, volumen de pedidos y tamaño promedio de compra.
-Marketing: Evaluación del gasto total por fuente, cálculo del CAC (Costo de Adquisición de Clientes) y determinación del ROMI (Retorno de la Inversión en Marketing).
+Cohort Analysis: Segmented users by acquisition date to track conversion velocity, order volume, and average ticket size over time.
 
+Marketing Performance (Unit Economics): * Calculated CAC (Customer Acquisition Cost) per source.
 
-Visualización: Creación de gráficos para comparar métricas según dispositivos y fuentes de anuncios a través del tiempo.
+Modeled LTV (Lifetime Value) to understand long-term health.
 
-💡 Conclusión y Recomendación Profesional
-El proyecto culmina con una propuesta estratégica fundamentada en métricas clave para asesorar a los expertos de marketing sobre qué plataformas y fuentes son más rentables y dónde se debe concentrar la inversión.
+Evaluated ROMI (Return on Marketing Investment) to identify the "break-even" point of various ad channels.
 
-Formato: El análisis completo se encuentra documentado en un Jupyter Notebook con código ordenado y explicaciones detalladas en cada paso.
+Data Visualization: Developed comparative dashboards to visualize performance trends across devices and advertising sources.
+
+##💡 Business Impact & Recommendations
+The project concludes with a strategic roadmap for the marketing team. By identifying high-yield sources and inefficient channels, the analysis provides a data-backed recommendation on where to scale investment to maximize ROI and shorten the CAC payback period.
